@@ -31,7 +31,7 @@
 
         <sensor name="laser" type="ray">
             <pose> 0 0 0 0 0 0 </pose>
-            <visualize>true</visualize>
+            <visualize>false</visualize> <!-- Matt - enable/disable to see in Gazebo-->
             <update_rate>10</update_rate>
             <ray>
                 <scan>
