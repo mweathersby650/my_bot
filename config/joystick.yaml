@@ -8,19 +8,23 @@ joy_node:
 teleop_node:
    ros__parameters:
       axis_linear:
-         x: 0
+         x: 1 #1 for joystick ; 0 for phone
       scale_linear:
-         x: 0.5
-      scale_linear_turbo:
          x: 1.0
-
+         #y: 2.5 #0.5
+         #z: -2.5 #0.5
+      scale_linear_turbo:
+         x: 1.5 #1.0
+         y: 1.0 #1.0
+         z: 1.0 #1.0
       axis_angular:
-         yaw: 2
+         yaw: 0 # 0 for joystick ; 1 for phone
       scale_angular:
-         yaw: 0.2
-      scale_angular_turbo:
          yaw: 1.0
+      scale_angular_turbo:
+         yaw: 1.5 # 1.0 make it turn
+
 
       require_enable_button: true
-      enable_button: 5  # Left shoulder button
-      enable_turbo_button: 6 # Right shoulder button
+      enable_button: 0  # A
+      enable_turbo_button: 1 # B
